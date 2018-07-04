@@ -1,0 +1,108 @@
+body{
+    background-color: black;
+}
+.title{
+    color:rgba(197, 170, 35, 0.95);
+    text-transform:uppercase;
+    margin: 2rem auto;
+    display: block;
+    width: 30vw;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+.title:hover{
+    text-decoration: none;
+    color: rgba(197, 170, 35, 1) 
+}
+.img-one{
+    position: relative;
+}
+.gallery{
+    padding:1.25rem;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+img:hover{
+    transform: scale(1.1, 1.1);
+    transition-duration: 1s;
+}
+.one-hover{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.19);
+    height: 100%;
+    display: none;
+}
+.svg{
+    fill: #E0DABF;
+    width: 20%;
+    margin-left: 8.75rem;
+    margin-top: 3.75rem;
+}
+.img-one:hover>.one-hover{
+    display: block;
+    box-shadow: 0px 5px 38px 3px #E0DABF;
+}
+/* SPRITE */
+.sprite{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    margin-left: 0;
+}
+ul>li{
+    display: inline-block;
+}
+ul>li>a{
+    display: block;
+    width: 32px;
+    height: 32px;
+    transform: scale(1,1);
+}
+a:hover{
+    transform: scale(1.5,1.5);
+    transition-duration: 1s;
+}
+.bg-facebook__1_ {
+    width: 32px;
+    height: 32px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+.bg-google_plus__1_ {
+    width: 32px;
+    height: 32px;
+    background: url('../img/css_sprites.png') -62px -10px;
+}
+.bg-instagram__1_ {
+    width: 32px;
+    height: 32px;
+    background: url('../img/css_sprites.png') -10px -62px;
+}
+.bg-linkedin__1_ {
+    width: 32px;
+    height: 32px;
+    background: url('../img/css_sprites.png') -62px -62px;
+}
+.bg-twitter__1_ {
+    width: 32px;
+    height: 32px;
+    background: url('../img/css_sprites.png') -114px -10px;
+}
+.scroll{
+    position: fixed;
+    bottom: 0px;
+    right: 2%;
+}
+.scroll>a{
+    text-decoration: none;
+    color:#E0DABF;
+}
