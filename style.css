@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.myWork {
+	margin-bottom: 2.813rem ;
+}
+
+.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+.container li {
+	list-style: none;
+}
+
+.container li a:hover {
+	display: block;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1, 1.1);
+	    -ms-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1);
+	-webkit-transition-duration: 0.8s;
+	     -o-transition-duration: 0.8s;
+	        transition-duration: 0.8s;
+}
+
+.menu {
+	width: 99vw;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	background-color: #1C415A;
+}
+
+.menu li {
+	display: inline-block;
+	margin: 1.25rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+	list-style: none;
+}
+
+.menu li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: wheat;
+	;
+}
+
+.menu li a:hover {
+	color: #EFF1F5;
+}
+
+.info {
+	font-size: 1.125rem;
+}
+
+span {
+	display: block;
+	text-align: center;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+b{
+text-transform: uppercase;
+}
+
+#section2,
+.info {
+	background-color: rgba(128, 128, 128, 0.29);
+	padding: 4.375rem;
+}
+
+.progress {
+	width: 40vw;
+}
+
+.scills {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	margin: 3.125rem;
+}
+
+.main-scills li {
+	margin: 0.625rem;
+	list-style-type: circle;
+}
+
+h2 {
+	width: 30vw;
+	margin: 0 auto;
+	padding: 1.25rem;
+	font-size: 3.125rem;
+	text-align: center;
+}
+
+.proc {
+	padding-left: 0.625rem;
+}
+
+.progress-bar{
+   background-color: #254D68;  
+}
+#education {
+	padding: 1.25rem;
+	margin: 3.125rem;
+}
+
+#contacts {
+	text-align: center;
+	padding: 1.25rem;
+	background-color: rgba(48, 27, 27, 0.87);
+	color: wheat;
+}
+
+#up {
+	position: fixed;
+	bottom: 0;
+	right: 2%;
+	color: wheat;
+	display: none;
+}

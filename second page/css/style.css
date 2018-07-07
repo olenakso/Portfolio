@@ -101,6 +101,7 @@ a:hover{
     position: fixed;
     bottom: 0px;
     right: 2%;
+    display: none;
 }
 .scroll>a{
     text-decoration: none;

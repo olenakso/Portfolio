@@ -1,53 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Elena Ksondzyk GitHUB</title>
-    <meta name="keywords" content="index, page, git, github">
-    <meta name="author" content="Elena Ksonzyk">
-    <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-        }
-    h1 {
-        display: block;
-        background-color: #658CDF;
-        margin: 0;
-        padding:  1.25rem;
-    }
-
-    .container{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    li a:hover{
-        display: block;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5); 
-        transform: scale(1.1, 1.1);
-        transition-duration: 0.8s;
-    }
-    </style>
-</head>
-
-<body>
-    <h1 align="center">My Portfolio</h1>
-   <br>
-   <div >
-        <ul class="container">
-                <li><a href="https://olenakso.github.io/Portfolio/test" target="_blank"><img src="img/myPage.png" alt="my-page" width="300" height="300"></a></li>
-                <li><a href="https://olenakso.github.io/Portfolio/second page" target="_blank"><img src="img/title.png" alt="my-page" width="300" height="300"></a></li>
-        </ul>
-
-   </div>
-    
-    <br>
-    <hr>
-    <br>
-    <p><a href="https://github.com/olenakso/Portfolio">Link for Source Files</a></p>
-</body>
-
+   <head>
+      <meta charset="UTF-8">
+      <title>Elena Ksondzyk GitHUB</title>
+      <meta name="keywords" content="index, page, git, github">
+      <meta name="author" content="Elena Ksonzyk">
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <link type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="Stylesheet" >
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <ul class="menu">
+         <li><a href="#">Обо мне</a></li>
+         <li><a href="#">Портфолио</a></li>
+         <li><a href="#section2">Навыки</a></li>
+         <li><a href="#education">Образование</a></li>
+         <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="about-me">
+         <img src="" alt="">
+         <div class="info">
+            <span>Ксендзык Елена Александровна</span> <br><br>
+            Дата рождения: 26.05.1985г (33 года)<br><br>
+            Семейное положение: замужем, детей нет<br><br>
+            Желаемая должность: <b>junior frontend developer</b><br><br>
+            Опыт работы:   2007-2016 ПАО "ПУМБ"  - специалист отдела расследований Процессингового центра<br><br>
+         </div>
+      </div>
+      <h2>Портфолио</h2>
+      <br>
+      <div class="myWork">
+         <ul class="container">
+            <li><a href="https://olenakso.github.io/Portfolio/test" target="_blank"><img src="img/myPage.png" alt="my-page" width="300" height="300"></a></li>
+            <li><a href="https://olenakso.github.io/Portfolio/second page" target="_blank"><img src="img/title.png" alt="my-page" width="300" height="300"></a></li>
+         </ul>
+      </div>
+      <div id="section2">
+         <h2>Навыки</h2>
+         <div class="scills">
+            <ul class="main-scills">
+               <li>Кроссбраузерная, валидная, семантичная, адаптивная верстка</li>
+               <li> HTML5, CSS3, Bootstrap 4, Flex, SCSS, WordPress, Prepross</li>
+               <li>Все необходимые для верстальщика навыки работы с Photoshop + Adobe Lightroom</li>
+               <li>Базовые знания JavaScript, jQuery</li>
+               <li>Git</li>
+               <li>Английский язык, уровень pre-intermidiate</li>
+               <li>Опыта работы нет, нет есть большое желание развиваться в данном направлении</li>
+            </ul>
+            <div class="pog">
+               <h3>HTML, CSS</h3>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="proc">75%</div>
+               </div>
+               <h3>JavaScript, jQuery</h3>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="proc">40%</div>
+               </div>
+               <h3>Photoshop</h3>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="proc">90%</div>
+               </div>
+               <h3>GIT</h3>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="proc">60%</div>
+               </div>
+               <h3>English</h3>
+               <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="proc">50%</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="education">
+         <h2>Образование</h2>
+         <p>  2007-2009г. ДонНТУ, «Экономический факультет», специальность «Экономика предприятия», квалификация -  экономист  </p>
+         <p> 2002-2007г.  ДонНТУ, «Механический факультет», специальность «Качество, стандартизация, сертификация»,                                 
+            квалификация -  специалист по управлению качеством 
+         </p>
+         <h4>Курсы</h4>
+         Сентябрь - Декабрь 2017 - <br>
+         Прослушала онлайн-курс Web developer Bootcamp
+      </div>
+      <div id="contacts">
+         <h2>Контакты</h2>
+         Email: babakina.lena1@gmail.com<br>
+         Телефон: +38(095)1353139<br>
+         Skype: Olena Ksondzyk<br>
+      </div>
+      <p><a href="https://github.com/olenakso/Portfolio">Link for Source Files</a></p>
+      <button type="button" id="up" class="btn btn-light">Вверх</button>
+      <script>
+         var up = document.getElementById("up");
+         window.onscroll = function func(){
+            if(window.pageYOffset >"200"){
+             up.style.display = "block";
+             up.style.backgroundColor="#1C415A";
+            }else{
+             up.style.display = "none";
+            }
+                   }
+         
+         $("#up").on("click", function(){
+          $("html").animate({scrollTop:0}, 1000 );       
+         })             
+      </script>
+   </body>
 </html>
