@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-lg-6">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                <div class="map"><div id='gmap_canvas'></div><div><small><a href="embedgooglemaps.com/ru">https://embedgooglemaps.com/ru/</a></small></div><div><small><a href="https://mrpromokod.ru/">mrpromokod.ru</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(50.41620229999999,30.62987659999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.41620229999999,30.62987659999999)});infowindow = new google.maps.InfoWindow({content:'<strong>Название</strong><br>Украина,Киев, ул Елены Пчелки<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div>
+        <div class="col-6 col-lg-3">
+            <div class="first-adress">
+                    <p class="name">8901 Marmora Road, Glasgow, D04 89GR.</p>
+                    <table>
+                        <tr>
+                            <td>Telephone</td>
+                            <td>+38 044 1234567</td>
+                        </tr>
+                        <tr>
+                          <td>Skipe</td>
+                          <td>skype_kjh</td>
+                        </tr>
+                        <tr>
+                          <td>Fax</td>
+                          <td>+38 044 9876534</td>
+                        </tr>
+                    </table>
+                    <p class="name">Email:<a href="#"> blah-blah@gmail.com</a></p>
+            </div>
+            <div class="second-adress">
+                    <p class="name">8901 Marmora Road, Glasgow, D04 89GR.</p>
+                    <table>
+                        <tr>
+                            <td>Telephone</td>
+                            <td>+38 044 1234567</td>
+                        </tr>
+                        <tr>
+                          <td>Skipe</td>
+                          <td>skype_kjh</td>
+                        </tr>
+                        <tr>
+                          <td>Fax</td>
+                          <td>+38 044 9876534</td>
+                        </tr>
+                    </table>
+                    <p class="name">Email:<a href="#"> blah-blah@gmail.com</a></p>
+            </div>   
+         
+        </div>
+        <div class="col-6 col-lg-3">
+            <form action="#">
+                    <input type="text" class= "myForm" type="reset" value="" placeholder="name" >
+                    <input type="email" class  = "myForm" type="reset" value="" placeholder="email">
+                    <input type="text" class  = "myForm" type="reset" value="" placeholder="subject" >
+                    <textarea name="text" class  = "myForm" type="reset" id="text" cols="30" rows="10" placeholder="your message"></textarea>
+                    <input type="submit" value="send">
+                    <input type="submit" id ="clear" value="clear">
+
+            </form>
+            
+        </div>
+        <div class="col-4 offset-4">
+   <span>Copyright@2018. All rights reserved</span>
+        </div>
+    </div>
+
+
+</div>  
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
