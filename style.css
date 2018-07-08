@@ -60,7 +60,7 @@
 
 .about-me{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .myFoto{
@@ -75,6 +75,8 @@
 
 .info {
 	font-size: 1.125rem;
+	max-width: 950px;
+	width: 100%;
 }
 
 span {
