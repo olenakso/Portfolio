@@ -16,6 +16,7 @@ for(var i=0; i<img.length; i++){
     })
 }
 
+/* up */
 buttons.addEventListener("click",function(){
     close.style.display = "none";
     
