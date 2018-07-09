@@ -119,8 +119,9 @@ h2 {
 	width: 30vw;
 	margin: 0 auto;
 	padding: 1.25rem;
-	font-size: 3.125rem;
+	font-size: 3rem;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .proc {
