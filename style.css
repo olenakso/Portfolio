@@ -3,20 +3,27 @@
 	padding: 0;
 }
 
-.myWork {
-	margin-bottom: 2.813rem ;
-}
+/* .myWork {
+	
+} */
 
 .container {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	flex-wrap: wrap;
 	display: flex;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+		justify-content: space-around;
+		margin-bottom: 2.813rem ;
+		align-content:space-between;	
+
 }
 
 .container li {
 	list-style: none;
+	padding: 10px;
+	border: 1px solid rgba(128, 128, 128, 0.3);
+	margin: 5px;
 }
 
 .container li a:hover {

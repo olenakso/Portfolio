@@ -45,6 +45,9 @@ reset.onclick = function(){
     hours.innerHTML = "00";
     min.innerHTML ="00";
     sec.innerHTML ="00";
+    i=0;
+    count =0;
+    ho = 0;
 }
 
 }
