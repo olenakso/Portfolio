@@ -1,0 +1,38 @@
+body{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stoowatch{
+    width: 30%;
+    margin: 200px  auto;
+    text-align: center;
+}
+
+span{
+    padding: 10px;
+}
+
+button{
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-style: italic;
+    border: 1px solid #060625;
+    border-radius: 6px;
+    background: linear-gradient( rgba(177, 95, 218, 0.79)30%, rgba(133, 29, 231, 0.88), rgba(177, 95, 218, 0.79));
+    -webkit-box-shadow: 1px 4px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 4px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 4px 8px 0px rgba(0,0,0,0.75);
+}
+
+button:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+    background-color: rgba(71, 79, 94, 0.4);
+}
+
+button:focus{
+    outline:none;
+}
