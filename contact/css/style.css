@@ -38,18 +38,20 @@ input{
     margin-top: 0.625rem;
     padding: 0.055rem;
     background-color: rgba(207, 204, 204, 0.24);
+    outline: none;
 }
 
 textarea{
     background-color: rgba(207, 204, 204, 0.23);
+    outline: none;
 }
 input::placeholder{
     font-size: 0.825rem;
     color: rgba(128, 128, 128, 0.67);
 }
 
-input[type="submit"]{
-    border-radius:30%;
+input[type="submit"], input[type="reset"]{
+    border-radius:6px;
     padding: 0.325rem 1.2rem;
     background-color: rgba(86, 104, 131, 0.12);
     margin-right: 1rem;
@@ -58,14 +60,29 @@ input[type="submit"]{
    
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover, input[type="reset"]:hover{
     cursor: pointer;
     transform: scale(1.1, 1.1);
-    background-color: rgba(86, 104, 131, 0.73);
+    background: linear-gradient( rgba(115, 225, 233, 0.79)30%, rgba(66, 196, 189, 0.88), rgba(95, 204, 218, 0.79));
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
-span{
+.right{
     display: inline-block;
     padding-top: 7.375rem;
     font-size: 1rem
 }
+
+#errors, #userPassConfMsj, #userMailMsj{
+    display: none;
+    color: red;
+}
+    .error{
+        background-color: #B97783;
+    }
+
+    .valid{
+        background-color: #5E945E;
+    }
