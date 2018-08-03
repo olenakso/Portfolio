@@ -1,0 +1,42 @@
+
+ul{
+    list-style: none;
+}
+
+.wrope{
+    border: 1px solid rgba(128, 128, 128, 0.19);
+    border-radius: 10px;
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #F7F3DD
+}
+
+.qwestion{
+    list-style: none;
+}
+
+.qwestion:before{
+    color:#427931;
+    font-weight: bold;
+    content:"§";
+    padding-right: 10px;
+}
+
+.radio{
+    padding-left: 10px;
+}
+input[type="submit"] {
+    border-radius: 8px;
+    border: 1px solid #3C3179;
+    padding: 10px;
+    margin-left: 25px;
+    outline: none;
+    background-color: #C5D7F5;
+    box-shadow: 2px 2px 5px #CFC9C9;
+    width: 20%;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
