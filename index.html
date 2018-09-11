@@ -13,6 +13,8 @@
       <link type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="Stylesheet" >
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      
    </head>
    <body>
       <ul class="menu">
@@ -23,8 +25,8 @@
          <li><a href="#contacts">contacts</a></li>
       </ul>
       <div class="about-me">
-         <img class="myFoto" src="img/resum.jpg" alt="my foto" >
-         <div class="info">
+         <img class="myFoto wow slideInLeft" src="img/resum.jpg" alt="my foto" data-wow-duration="3s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1" >
+         <div class="info wow slideInRight" data-wow-duration="3s" data-wow-delay="0.1s" data-wow-offset="10" data-wow-iteration="1">
             <span>Ксендзык Елена (Ksondzyk Elena)</span> <br><br>
             Дата рождения: 26.05.1985г (33 года)<br><br>            
             Желаемая должность: <b>junior frontend developer</b><br><br>
@@ -32,21 +34,21 @@
             Семейное положение: замужем<br><br>
          </div>
       </div>
-      <h2>portfolio</h2>
+      <h2 class="wow slideInLeft " >portfolio</h2>
       <br>
       <!-- <div class="myWork"> -->
-         <ul class="container">
-            <li><a href="https://olenakso.github.io/Portfolio/test" target="_blank"><img src="img/myPage.png" alt="my-page" width="300" height="300"></a></li>
-            <li><a href="https://olenakso.github.io/Portfolio/adaptivs/app" target="_blank"><img src="img/adaptiv.png" alt="my-page" width="300" height="300"></a></li>
-            <li><a href="https://olenakso.github.io/Portfolio/second page" target="_blank"><img src="img/title.png" alt="my-page" width="300" height="300"></a></li>
-            <li><a href="https://olenakso.github.io/Portfolio/contact" target="_blank"><img src="img/contact.png" alt="my-page" width="300" height="300"></a></li>
-            <li><a href="https://olenakso.github.io/Portfolio/timer" target="_blank"><img src="img/timer.png" alt="my-page" width="300" height="300"></a></li>
-            <li><a href="https://olenakso.github.io/Portfolio/calc" target="_blank"><img src="img/calc.png" alt="my-page" width="300" height="300"></a></li>
-            <li><a href="https://olenakso.github.io/Portfolio/poll" target="_blank"><img src="img/poll.png" alt="my-page" width="300" height="300"></a></li>
+         <ul class="container wow slideInLeft "  data-wow-delay="1.5s" >
+            <li><a  href="https://olenakso.github.io/Portfolio/test" target="_blank"><img src="img/myPage.png" alt="my-page" width="300" height="300"></a></li>
+            <li><a  href="https://olenakso.github.io/Portfolio/adaptivs/app" target="_blank"><img src="img/adaptiv.png" alt="my-page" width="300" height="300"></a></li>
+            <li><a   href="https://olenakso.github.io/Portfolio/timer" target="_blank"><img src="img/timer.png" alt="my-page" width="300" height="300"></a></li>
+            <li><a   href="https://olenakso.github.io/Portfolio/calc" target="_blank"><img src="img/calc.png" alt="my-page" width="300" height="300"></a></li>
+            <li><a   href="https://olenakso.github.io/Portfolio/poll" target="_blank"><img src="img/poll.png" alt="my-page" width="300" height="300"></a></li>
+            <li><a  href="https://olenakso.github.io/Portfolio/second page" target="_blank"><img src="img/title.png" alt="my-page" width="300" height="300"></a></li>
+            <li><a  href="https://olenakso.github.io/Portfolio/contact" target="_blank"><img src="img/contact.png" alt="my-page" width="300" height="300"></a></li>
          </ul>
      <!--  </div> -->
       <div id="section2">
-         <h2>skills</h2>
+         <h2 class="wow pulse" data-wow-delay="3s" data-wow-iteration="10" >skills</h2>
          <div class="scills">
             <ul class="main-scills">
                <li>Кроссбраузерная, валидная, семантичная, адаптивная верстка</li>
@@ -87,7 +89,7 @@
          </div>
       </div>
       <div id="education">
-         <h2>education</h2>
+         <h2 class="wow pulse">education</h2>
          <p>  2007-2009г. ДонНТУ, «Экономический факультет», специальность «Экономика предприятия», квалификация -  экономист  </p>
          <p> 2002-2007г.  ДонНТУ, «Механический факультет», специальность «Качество, стандартизация, сертификация»,                                 
             квалификация -  специалист по управлению качеством 
@@ -105,6 +107,10 @@
       </div>
       <p><a href="https://github.com/olenakso/Portfolio">Link for Source Files</a></p>
       <button type="button" id="up" class="btn btn-light">Вверх</button>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
       <script>
          var up = document.getElementById("up");
          window.onscroll = function func(){
@@ -118,7 +124,10 @@
          
          $("#up").on("click", function(){
           $("html").animate({scrollTop:0}, 1000 );       
-         })             
+         })    
+
+          
       </script>
+    
    </body>
 </html>
