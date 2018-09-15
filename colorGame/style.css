@@ -6,13 +6,13 @@
 
 body{
     background: #76AED3;
-    background: linear-gradient(to right, #65A2E4 , #76AED3 ,  #539EEE);
+    background: linear-gradient(to right, #8AB0D8 , #E7E7CF ,  #DB99C7);
 }
 
 
 .main-line{
     text-align: center;
-    background-color: rgb(82,149,125);
+    background-color: #255040;
     padding: 15px;
     font-family: 'Lobster Two', cursive;
     font-weight: bold;

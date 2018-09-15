@@ -30,7 +30,7 @@ function getRendom(min,max){
        return Math.floor(Math.random()*(max-min+1))+min;
 }
 
-
+/* поиск цвета */
 for(i=0;i<colors.length;i++){
     colors[i].onclick = function(e){
         if(randomColor.innerHTML == this.style.backgroundColor ){
