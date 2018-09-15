@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,16 +42,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.block p, .even-section .section-text, .staff-member-info p, .contact-list h4 {
+  line-height: 20px;
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 14px; }
+
 header {
   background-image: url(../img/main.jpg);
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Oswald", sans-serif;
   height: auto;
-  padding-top: 40px; }
+  padding-top: 40px;
+  position: relative; }
   header .logo {
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
     header .logo:hover {
       text-decoration: none;
-      font-size: 25px; }
+      font-size: 18px; }
+    header .logo:focus {
+      outline: none; }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -59,27 +71,30 @@ header {
     justify-content: space-around; }
     header ul a {
       text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
       header ul a:hover {
         text-decoration: none;
         font-size: 18px;
         color: #fff; }
 
-.position {
-  position: relative; }
+.dropdown {
+  display: none; }
 
 .topDiv {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.38);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 0;
-  left: 0; }
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px; }
 
 .header-welcome {
   color: #fff;
   text-transform: uppercase;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Noto Serif JP", sans-serif;
   font-size: 30px;
   font-weight: bold;
   margin-top: 257px;
@@ -89,9 +104,355 @@ header {
 .header-welcome + p {
   color: #fff;
   text-align: center;
-  margin-bottom: 42px; }
+  margin-bottom: 42px;
+  font-family: "Noto Serif JP", sans-serif; }
 
 .btn {
   display: block;
   margin: 0 auto;
   margin-bottom: 253px; }
+
+/* Второй блок */
+.service {
+  padding: 60px;
+  color: #555555; }
+  .service h3 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase; }
+  .service p {
+    font-family: "Lobster Two", sans-serif;
+    font-size: 16px;
+    text-align: center; }
+
+.block {
+  text-align: center;
+  color: #555555;
+  margin-top: 6px;
+  margin-bottom: 90px; }
+  .block img {
+    margin: 20px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .block img:hover {
+      /*  transform: scale(1.1,1.1); */
+      -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+      transform: scaleX(-1);
+      cursor: pointer; }
+  .block h4 {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px; }
+
+/* Третий блок */
+.even-section {
+  background-color: rgba(128, 128, 128, 0.26); }
+  .even-section .section-text {
+    margin-bottom: 69px; }
+
+.staff-member {
+  height: 245px;
+  width: 260px;
+  overflow: hidden;
+  position: relative; }
+  .staff-member:hover > .staff-member-hover {
+    display: block;
+    cursor: pointer; }
+
+.staff-member-hover {
+  background: rgba(128, 128, 128, 0.4);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: none; }
+  .staff-member-hover .staff-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 178px auto 28px; }
+    .staff-member-hover .staff-icons img {
+      margin: 5px;
+      padding: 7px; }
+      .staff-member-hover .staff-icons img:hover {
+        background: #C40E0E; }
+
+.staff-member-info {
+  margin-top: 16px;
+  margin-bottom: 96px;
+  text-align: center; }
+  .staff-member-info h4 {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    font-weight: bold; }
+  .staff-member-info p {
+    margin-top: 14px; }
+
+/* Третья секция */
+.service ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center; }
+  .service ul a {
+    color: #555555; }
+    .service ul a:hover {
+      text-decoration: none;
+      color: #C40E0E; }
+
+/* Галерея */
+.gallary {
+  overflow: hidden;
+  position: relative;
+  height: 315px;
+  width: 357px;
+  margin-bottom: 20px;
+  -webkit-transition: all 5.5s ease;
+  -o-transition: all 5.5s ease;
+  transition: all 5.5s ease; }
+  .gallary:hover > .red-cover {
+    display: block; }
+  .gallary img {
+    height: 100%;
+    width: 100%; }
+
+.red-cover {
+  position: absolute;
+  background-color: #C40E0E;
+  opacity: 0.6;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  padding-top: 25%;
+  line-height: 35px;
+  color: #fff;
+  margin: 0 15px;
+  display: none; }
+  .red-cover h4 {
+    font-size: 18px;
+    font-family: "Noto Serif JP", sans-serif; }
+  .red-cover span {
+    display: block;
+    font-size: 12px;
+    font-family: "Lobster Two", sans-serif; }
+  .red-cover button {
+    padding-left: 17px;
+    padding-right: 17px;
+    font-family: "Noto Serif JP", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #C40E0E;
+    font-weight: bold; }
+    .red-cover button:hover {
+      background-color: white;
+      cursor: pointer;
+      border: none;
+      -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1); }
+    .red-cover button img {
+      height: 5px;
+      width: 5px;
+      margin: 2px; }
+
+/* четвертая секция */
+.getTouch {
+  background-image: url(../img/main-bottom.jpg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: auto;
+  position: relative; }
+
+.touch {
+  text-align: center;
+  margin-top: 95px;
+  color: #fff; }
+  .touch button {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px; }
+    .touch button:hover {
+      cursor: pointer;
+      border: 2px solid #fff; }
+  .touch p {
+    line-height: 25px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: "Noto Serif JP", sans-serif; }
+
+.btn-touch {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 95px; }
+
+/* Пятая секция */
+.our-brands {
+  text-align: center;
+  margin-bottom: 50px; }
+  .our-brands p {
+    margin: 20px;
+    color: #555555;
+    line-height: 25px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 20px; }
+  .our-brands span {
+    color: #555555;
+    margin: 28px 0;
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px; }
+
+.brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 60px 0; }
+  .brands li {
+    margin: 15px; }
+
+/*  */
+.contacts {
+  margin-left: 10px;
+  margin-top: 30px; }
+
+.contact-list h4 {
+  text-transform: uppercase;
+  color: #555555; }
+
+.contact-list p {
+  color: #555555;
+  line-height: 16px;
+  padding-left: 18px;
+  padding-top: 20px;
+  font-size: 12px;
+  font-family: "Oswald", sans-serif; }
+
+.contact-adress::before {
+  content: url(../img/fa-map-marker.png);
+  margin-right: 10px; }
+
+.contact-phone::before {
+  content: url(../img/fa-mobile-phone.png);
+  margin-right: 10px; }
+
+.contact-mail::before {
+  content: url(../img/fa-envelope-o.png);
+  margin-right: 10px; }
+
+input[type=text], input[type=email] {
+  width: 40%;
+  margin: 10px;
+  padding: 10px;
+  color: #555555; }
+  input[type=text]:focus, input[type=email]:focus {
+    outline: none; }
+  input[type=text]:hover, input[type=email]:hover {
+    border: 1px solid black; }
+
+textarea {
+  width: 90%;
+  margin: 10px;
+  padding: 10px; }
+  textarea:hover {
+    border: 1px solid black; }
+  textarea:focus {
+    outline: none; }
+
+input[type=submit] {
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+  color: #555555;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif; }
+  input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid black; }
+
+form {
+  margin-bottom: 50px; }
+
+::-webkit-input-placeholder {
+  text-transform: uppercase; }
+
+::-moz-placeholder {
+  text-transform: uppercase; }
+
+:-moz-placeholder {
+  text-transform: uppercase; }
+
+:-ms-input-placeholder {
+  text-transform: uppercase; }
+
+/* footer */
+footer {
+  background-color: #C40E0E; }
+  footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    footer .social img {
+      margin: 8px;
+      -webkit-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease; }
+      footer .social img:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1); }
+
+.service p {
+  color: #fff; }
+
+@media (max-width: 992px) {
+  input[type=submit] {
+    width: 80%;
+    margin: 10px 40px;
+    padding: 10px;
+    color: #555555;
+    text-transform: uppercase; }
+  .service {
+    padding: 20px; }
+  .contact-list p {
+    padding-bottom: 10px;
+    padding-top: 5px; }
+  .brands {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .touch p, .header-welcome {
+    font-size: 20px; }
+  .nav {
+    display: none; }
+  .dropdown {
+    display: block; }
+  .header-welcome {
+    margin-top: 0px; } }

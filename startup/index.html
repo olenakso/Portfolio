@@ -1,52 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header>
-        <div class="topDiv"></div>
-        <div class="container position">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+   </head>
+   <body>
+      <!-- header -->
+      <header>
+         <div class="topDiv"></div>
+         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <a class="logo" href="#">Startup</a>
-                </div>
-                <div class="col-6 offset-4">
-                    <ul class="nav">
-                        <li ><a href="#">Home</a></li>
-                        <li ><a href="#">Servises</a></li>
-                        <li ><a href="#">About</a></li>
-                        <li ><a href="#">Works</a></li>
-                        <li ><a href="#">Blog</a></li>
-                        <li ><a href="#">Clients</a></li>
-                        <li ><a href="#">Contact</a></li>    
-                   </ul>
-                </div>
+               <div class="col-2">
+                  <a class="logo" href="#">Startup</a>
+               </div>
+               <div class="col-6 offset-4">
+                  <ul class="nav">
+                     <li ><a href="#">Home</a></li>
+                     <li ><a href="#">Servises</a></li>
+                     <li ><a href="#">About</a></li>
+                     <li ><a href="#">Works</a></li>
+                     <li ><a href="#">Blog</a></li>
+                     <li ><a href="#">Clients</a></li>
+                     <li ><a href="#">Contact</a></li>
+                  </ul>
+                  <div class="dropdown">
+                     <button class="btn btn-outline-light dropdown-toggle" type="button" id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     About Us
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="about-us">
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Servises</a>
+                        <a class="dropdown-item" href="#">About</a>
+                        <a class="dropdown-item" href="#">Works</a>
+                        <a class="dropdown-item" href="#">Blog</a>
+                        <a class="dropdown-item" href="#">Clients</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="row">
-                <div class="col-6 ml-auto mr-auto">
-                    <div class="header-welcome">welcome to startup</div>
-                        <p>Your Favourite Creative Agency Template</p>
-                        <button type="button" class="btn btn-outline-light">Get Started</button>   
-                </div>
+               <div class="col-6 ml-auto mr-auto">
+                  <div class="header-welcome">welcome to startup</div>
+                  <p>Your Favourite Creative Agency Template</p>
+                  <button type="button" class="btn btn-outline-light">Get Started</button>   
+               </div>
             </div>
-        </div>
-        
-    </header>
-
-
-
-
-    <script src="js/scrypt.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+         </div>
+      </header>
+      <section>
+         <!-- Первая секция -->
+         <div class="container">
+            <div class="row">
+               <div class="col-7 offset-3 service">
+                  <h3>Services</h3>
+                  <hr>
+                  <p>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col block">
+                  <img src="img/FA-icon.png" alt="icon">
+                  <h4>Clean Typography</h4>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
+                     'Content here, content here', making it look like readable English. 
+                  </p>
+               </div>
+               <div class="col block">
+                  <img src="img/FA-icon1.png" alt="icon">
+                  <h4>Clean Typography</h4>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
+                     'Content here, content here', making it look like readable English.  
+                  </p>
+               </div>
+               <div class="col block">
+                  <img src="img/FA-icon2.png" alt="icon">
+                  <h4>Clean Typography</h4>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+                     as opposed to using 'Content here, content here', making it look like readable English.  
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Вторая секция -->
+      <section class="even-section">
+         <div class="container section-about">
+            <div class="row">
+               <div class="col-7 offset-3 service">
+                  <h3>About us</h3>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6">
+                  <p class="section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                     standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+               </div>
+               <div class="col-6">
+                  <p class="section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                     text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-6 col-md-4 col-lg-3 ">
+                  <div class="staff-member">
+                     <img class="img-fluid" src="img/john.jpg" alt=""> 
+                     <div class="staff-member-hover">
+                        <div class="staff-icons">
+                           <img src="img/Facebook-Logo.png" alt="">
+                           <img src="img/fa-linkedin.png" alt="">
+                           <img src="img/Google-Plus-Logo.png" alt="">
+                           <img src="img/Twitter-Logo-Silhouette.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="staff-member-info">
+                     <h4>Md. Khalil Uddin</h4>
+                     <p>Head of Ideas</p>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-3 ">
+                  <div class="staff-member">
+                     <img class="img-fluid" src="img/khalil.jpg" alt="">  
+                     <div class="staff-member-hover">
+                        <div class="staff-icons">
+                           <img src="img/Facebook-Logo.png" alt="">
+                           <img src="img/fa-linkedin.png" alt="">
+                           <img src="img/Google-Plus-Logo.png" alt="">
+                           <img src="img/Twitter-Logo-Silhouette.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="staff-member-info">
+                     <h4>Rubel Miah</h4>
+                     <p>Lead WordPress Developer</p>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-3 ">
+                  <div class="staff-member">
+                     <img class="img-fluid" src="img/rubel.jpg" alt=""> 
+                     <div class="staff-member-hover">
+                        <div class="staff-icons">
+                           <img src="img/Facebook-Logo.png" alt="">
+                           <img src="img/fa-linkedin.png" alt="">
+                           <img src="img/Google-Plus-Logo.png" alt="">
+                           <img src="img/Twitter-Logo-Silhouette.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="staff-member-info">
+                     <h4>Shamim Mia</h4>
+                     <p>Sr. Web Developer</p>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-3 ">
+                  <div class="staff-member">
+                     <img class="img-fluid" src="img/shamim.jpg" alt="">  
+                     <div class="staff-member-hover">
+                        <div class="staff-icons">
+                           <img src="img/Facebook-Logo.png" alt="">
+                           <img src="img/fa-linkedin.png" alt="">
+                           <img src="img/Google-Plus-Logo.png" alt="">
+                           <img src="img/Twitter-Logo-Silhouette.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="staff-member-info">
+                     <h4>John Doe</h4>
+                     <p>Front-end Developer</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Третья секция -->
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-7 offset-3 service">
+                  <h3>Latest Works</h3>
+                  <hr>
+                  <ul>
+                     <li> <a href="#">All</a> </li>
+                     <li> <a href="#">Branding</a>  </li>
+                     <li><a href="#">Design </a>  </li>
+                     <li><a href="#">Development</a>  </li>
+                     <li><a href="#">Strategy</a> </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 gallary">
+                  <img class="img-fluid" src="img/heir.jpg" alt="">
+                  <div class="red-cover">
+                     <h4>Hair Dresser</h4>
+                     <span>Branding</span>
+                     <button>View <img src="img/fa-angle-left.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 gallary">
+                  <img class="img-fluid" src="img/berd.jpg" alt="">
+                  <div class="red-cover">
+                     <h4>Hair Dresser</h4>
+                     <span>Branding</span>
+                     <button>View <img src="img/fa-angle-left.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 gallary">
+                  <img class="img-fluid" src="img/pen.jpg" alt="">
+                  <div class="red-cover">
+                     <h4>Hair Dresser</h4>
+                     <span>Branding</span>
+                     <button>View <img src="img/fa-angle-left.png" alt=""></button>
+                  </div>
+               </div>
+               <!--    <div class="w-100"></div> -->
+               <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 gallary">
+                  <img class="img-fluid" src="img/foto.jpg" alt="">
+                  <div class="red-cover">
+                     <h4>Hair Dresser</h4>
+                     <span>Branding</span>
+                     <button>View <img src="img/fa-angle-left.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 gallary">
+                  <img class="img-fluid" src="img/bysicle.jpg" alt="">
+                  <div class="red-cover">
+                     <h4>Hair Dresser</h4>
+                     <span>Branding</span>
+                     <button>View <img src="img/fa-angle-left.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 gallary">
+                  <img class="img-fluid" src="img/notebook.jpg" alt="">
+                  <div class="red-cover">
+                     <h4>Hair Dresser</h4>
+                     <span>Branding</span>
+                     <button>View <img src="img/fa-angle-left.png" alt=""></button>
+                  </div>
+               </div>
+               <!-- <div class="w-100"></div> -->
+               <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 gallary">
+                  <img class="img-fluid" src="img/table.jpg" alt="">
+                  <div class="red-cover">
+                     <h4>Hair Dresser</h4>
+                     <span>Branding</span>
+                     <button>View <img src="img/fa-angle-left.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 gallary">
+                  <img class="img-fluid" src="img/styff.jpg" alt="">
+                  <div class="red-cover">
+                     <h4>Hair Dresser</h4>
+                     <span>Branding</span>
+                     <button>View <img src="img/fa-angle-left.png" alt=""></button>
+                  </div>
+               </div>
+               <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 gallary">
+                  <img class="img-fluid" src="img/events.jpg" alt="">
+                  <div class="red-cover">
+                     <h4>Hair Dresser</h4>
+                     <span>Branding</span>
+                     <button>View <img src="img/fa-angle-left.png" alt=""></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Четвертая секция -->
+      <section class="getTouch">
+         <div class="topDiv"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-6 offset-3 touch">
+                  <p>
+                     Do you like OUR WORK so far?   
+                  </p>
+                  <p>
+                     Let's talk about YOUR PROJECT!
+                  </p>
+                  <button type="button" class="btn-touch btn-outline-light">Get in Touch</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Пятая секция -->
+      <section class="even-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-10 offset-1 our-brands">
+                  <ul class="brands">
+                     <li><a href=""><img src="img/deor.png" alt=""></a></li>
+                     <li><a href=""><img src="img/bcause.png" alt=""></a></li>
+                     <li><a href=""><img src="img/ratings.png" alt=""></a></li>
+                     <li><a href=""><img src="img/malic.png" alt=""></a></li>
+                     <li><a href=""><img src="img/wom.png" alt=""></a></li>
+                  </ul>
+                  <p>"Hvaing placeat facere possimus, omnis voluptas assumenda est
+                     possimus, omnis voluptas assumenda est, omnis voluptas assumenda est"
+                  </p>
+                  <span>Joh Doel, Google Inc</span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- шестая секция -->
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-10 offset-1 col-lg-7 offset-lg-3 service">
+                  <h3>Get in touch</h3>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-8 offset-2 col-lg-2 offset-lg-0 contact-list">
+                  <div class="contacts">
+                     <h4 class="contact-adress">Address</h4>
+                     <p>312, 7th Ave, New York NY 101200, United States of America  </p>
+                  </div>
+                  <div class="contacts">
+                     <h4 class="contact-phone">Hotline (24x7)</h4>
+                     <p>+65 0052 300, +65 88251 210 +88 01723 511 340    </p>
+                  </div>
+                  <div class="contacts">
+                     <h4 class="contact-mail">E-mail</h4>
+                     <p>shapedtheme@gmail.com khalilkode@gmail.com    </p>
+                  </div>
+               </div>
+               <div class="col-12 col-lg-10">
+                  <form action="#">
+                     <input type="text"  placeholder="your name">
+                     <input type="email"  placeholder="your e-mail">
+                     <input type="text"  placeholder="your subject">
+                     <input type="text"  placeholder="company name">
+                     <textarea  cols="30" rows="10" placeholder="your message"></textarea>
+                     <input type="submit" value="send message">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- footer -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-7 offset-3 service">
+                  <div class="social">
+                     <img src="img/Group-5.png" alt="">
+                     <img src="img/Group-5.png" alt="">
+                     <img src="img/Group-5.png" alt="">
+                     <img src="img/Group-5.png" alt="">
+                  </div>
+                  <hr>
+                  <p>© 2015 Startup, Designed by ShapedTheme</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="js/scrypt.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
 </html>

@@ -24,18 +24,48 @@
 	padding: 10px;
 	border: 1px solid rgba(128, 128, 128, 0.3);
 	margin: 5px;
+	position: relative;
+	}
+
+
+.description{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background: rgba(128, 128, 128, 0.57);
+	display: none;
 }
+
+
+.container li:hover>.description  {
+	display: block;
+	cursor: pointer;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	
+	}
 
 .container li a:hover {
 	display: block;
+	text-decoration: none;
+	height: 100%;
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	-webkit-transform: scale(1.1, 1.1);
 	    -ms-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	        transform: scale(1.01, 1.01);
 	-webkit-transition-duration: 0.8s;
 	     -o-transition-duration: 0.8s;
 	        transition-duration: 0.8s;
+}
+
+.description-text{
+	display: block;
+	color: #FCFAF8;
+	text-align: center;
+	padding: 30%;
+	font-size:25px;
 }
 
 .menu {
@@ -81,12 +111,13 @@
 	color: #EFF1F5;
 }
 
+
 .info {
 	font-size: 1.125rem;
 	width: 100%;
 }
 
-span {
+.name {
 	display: block;
 	text-align: center;
 	font-size: 1.25rem;
