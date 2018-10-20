@@ -1,0 +1,78 @@
+*{
+    margin: 0;padding-block-end: 0;
+}
+
+body{
+    color: #FDFBF7;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+      
+}
+
+header{
+    background: url("img/main-header.jpeg") no-repeat center;
+    background-size: cover;
+    height: 600px;
+   text-align: left;
+   padding: 10px;
+
+}
+.header-description{
+/* padding-top: 420px */
+
+}
+.head{
+
+        
+        font-family: "Showcard Gothic";
+        color: rgb( 239, 211, 239 );
+        line-height: 4.182;
+        text-shadow: 2.5px 4.33px 5px rgb( 0, 0, 0 );
+       /*  position: absolute; 
+         left:599px;
+        top: 200px; */ 
+        width: 530px;
+        height: 262px;
+        z-index: 2;
+      
+      
+}
+p{
+    font-family: 'Marck Script', cursive;
+  padding-left: 15px;
+    vertical-align: top; 
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+span{
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.header-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+    padding-top: 100px;
+    margin-bottom: 0px;
+    list-style: none;
+    position: relative;
+}
+
+.header-menu-item{
+    padding: 45px;
+    padding-bottom: 0px;
+   
+}
+
+.header-menu-item-link{
+    color: rgb( 239, 211, 239 );
+    text-decoration: none;
+}
+
+.header-sub-menu{
+    position: absolute;
+    text-decoration: none;
+}
