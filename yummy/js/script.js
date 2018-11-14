@@ -6,10 +6,10 @@
     
        $("#slider1").responsiveSlides({
         auto: true,
-        pager: true,
-        nav: true,
-        speed: 300,
-        maxwidth: 1000,
+        //pager: true,
+        //nav: true,
+        speed: 500,
+        maxwidth: 2000,
         namespace: "centered-btns"
       });
  
