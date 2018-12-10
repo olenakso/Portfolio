@@ -94,7 +94,7 @@ header {
 .header-welcome {
   color: #fff;
   text-transform: uppercase;
-  font-family: "Noto Serif JP", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: bold;
   margin-top: 257px;
@@ -150,6 +150,9 @@ header {
     margin-bottom: 25px; }
 
 /* Третий блок */
+.pictures {
+  overflow: hidden; }
+
 .even-section {
   background-color: rgba(128, 128, 128, 0.26); }
   .even-section .section-text {
@@ -157,7 +160,7 @@ header {
 
 .staff-member {
   height: 245px;
-  width: 260px;
+  width: 100%;
   overflow: hidden;
   position: relative; }
   .staff-member:hover > .staff-member-hover {
@@ -185,6 +188,10 @@ header {
       padding: 7px; }
       .staff-member-hover .staff-icons img:hover {
         background: #C40E0E; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
 
 .staff-member-info {
   margin-top: 16px;
@@ -455,4 +462,9 @@ footer {
   .dropdown {
     display: block; }
   .header-welcome {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  .service ul {
+    width: 100%; }
+  .img-fluid {
+    max-width: 100%;
+    height: 100%; } }

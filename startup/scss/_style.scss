@@ -58,7 +58,7 @@ header {
 	color: $colorHeader;
 	text-transform: uppercase;
 	font: {
-		family: $secondFont;
+		family: $mainFont;
 		size: 30px;
 		weight: bold;
 	}
@@ -126,7 +126,9 @@ header {
 	}
 }
 /* Третий блок */
-
+.pictures{
+	overflow: hidden;
+}
 .even-section {
 	background-color: rgba(128, 128, 128, 0.26);
 	.section-text {
@@ -136,7 +138,7 @@ header {
 }
 .staff-member {
 	height: 245px;
-	width: 260px;
+	width: 100%;
 	overflow: hidden;
 	position: relative;
 	&:hover>.staff-member-hover {
@@ -164,6 +166,11 @@ header {
 			}
 		}
 	}
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
 .staff-member-info {
 	margin-top: 16px;
@@ -473,5 +480,14 @@ footer {
 	}
 	.header-welcome {
 		margin-top: 0px;
+	}
+	.service {
+		ul {
+			width: 100%;		
+		}
+	}
+	.img-fluid {
+		max-width: 100%;
+		height: 100%;
 	}
 }
